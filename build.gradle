@@ -81,3 +81,11 @@ bootBuildImage {
         imageName = rootProject['jmixDockerTag']
     }
 }
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'io.jmix.petclinic.JmixPetclinicApplication'
+        )
+    }
+}
